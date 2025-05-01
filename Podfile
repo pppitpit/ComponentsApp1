@@ -19,6 +19,6 @@ target 'Tutorial' do
   target 'TutorialTests' do
     inherit! :search_paths
     use_frameworks!
-    pod 'SnapshotTesting', '~> 1.8.1'
+    pod 'SnapshotTesting', '~> 1.9.0'
   end
 end
