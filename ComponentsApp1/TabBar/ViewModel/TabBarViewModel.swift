@@ -51,4 +51,11 @@ class TabBarViewModel: ObservableObject {
         let coordinator = SceneCoordinator()
         coordinator.transition(type: transition)
     }
+
+    func chat() {
+        let scene = ChatScene.chat
+        let transition: SceneTransitionType = .present(scene: scene, animated: true, presentationStyle: .pageSheet)
+        let coordinator = SceneCoordinator()
+        coordinator.transition(type: transition)
+    }
 }

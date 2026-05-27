@@ -137,6 +137,20 @@
                                         .fill(.green)
                                 )
                         }
+
+                        Button {
+                            self.viewModel.chat()
+                        } label: {
+                            Text("Chat")
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                                .padding(.vertical, 12)
+                                .padding(.horizontal, 12)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                        .fill(.orange)
+                                )
+                        }
                     }
                     .padding(.top, 20)
                 }
